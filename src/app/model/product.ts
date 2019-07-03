@@ -1,11 +1,13 @@
 export class Product {
     name: string;
     price: number;
-    image: ImageBitmapSource;
+    sale: boolean;
+    image: string;
 
-    constructor(name: string, price: number, image: ImageBitmapSource) {
+    constructor(name: string, price: number, sale: boolean, image: string) {
         this.name = name;
         this.price = price;
-        this.image = image;
+        this.sale = sale;
+        this.image = 'galletas.jpg';
     }
 }

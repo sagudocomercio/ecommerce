@@ -1,0 +1,12 @@
+.producto {
+    font-size: 1.6em;
+    color: blueviolet;
+}
+
+.onsale {
+    background-color: chartreuse;
+}
+
+.notonsale {
+    background-color: blue;
+}
