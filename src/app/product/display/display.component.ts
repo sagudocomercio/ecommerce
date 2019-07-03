@@ -37,8 +37,9 @@ export class DisplayComponent implements OnInit {
     return this.quantity;
   }
 
-  changeSale(): boolean {
+  changeSale(event): boolean {
     this.producto.sale = !this.producto.sale;
+    console.log('changeSale:', event);
     return this.producto.sale;
   }
 }
