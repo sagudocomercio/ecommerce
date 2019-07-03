@@ -7,6 +7,7 @@
                 Product Price: {{ producto.price }}<br> 
                 Picture: <img src='{{ producto.image }}'> 
         </div>
+        <button (click)="changeSale()">Cambiar</button>
         <button (click)="increaseQuantity()">Añadir al carrito</button>
         <button (click)="decreaseQuantity()" [disabled]="getQuantity()<=0">Quitar del carrito</button>
         <div>Cantidad en el carro: {{ getQuantity() }}</div>

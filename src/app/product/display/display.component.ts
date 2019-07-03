@@ -36,4 +36,9 @@ export class DisplayComponent implements OnInit {
   getQuantity(): number {
     return this.quantity;
   }
+
+  changeSale(): boolean {
+    this.producto.sale = !this.producto.sale;
+    return this.producto.sale;
+  }
 }
